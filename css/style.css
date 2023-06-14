@@ -96,6 +96,17 @@ body {
     color: #0065FC;
     border-top: 4px solid #0065FC;
 }
+/********hero ***********/
+
+.hero-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.hero-subtitle{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
