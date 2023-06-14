@@ -414,6 +414,40 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/**********footer************/
+
+.site-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 250px;
+    background-color: var(--main-bg-color);
+    padding: 30px;
+}
+
+.site-footer .list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer .list-item{
+    margin-bottom: 10px;
+}
+
+.site-footer .list-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-item:hover{
+    transform: scale(1.1);
+}
+    
+.list-link:hover{
+    color: var(--main-color);
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
