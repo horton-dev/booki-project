@@ -159,6 +159,9 @@ body {
     font-weight: 700;
     padding: 14px;
 }
+.search-button-mobile{
+    display: none;
+}
 
 .search-button:hover{
     background-color: green;
@@ -531,47 +534,46 @@ body {
 @media (max-width: 768px) {
     /* ... */
     .main-container{
+        width: 100%;
         padding: 0;
         margin: 0;
     }
     .site-header {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        text-align: center;
     }
     .site-logo{
-        width: 20%;
-        height: 20%;
-        margin-top: 30px;
-        
+        order: 1; /* this will place the logo above the menu */
+        width: 30%; /* adjust as needed */
+        height: auto; /* adjust as needed */
+        margin-bottom: 30px; /* adjust as needed */
     }
     .main-nav{
+        order: 2; /* this will place the menu below the logo */
         width: 100%;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
     }
     .nav-list{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between; /* distribute menu items evenly across the available space */
     }
     .nav-item{
-        margin-top: 30px;
-        
+        width: 50%; /* each menu item will take up half of the screen */
+        text-align: center; /* center the text within each menu item */
     }
     .nav-link{
+        display: block; /* this will make the entire menu item clickable, not just the text */
+        padding: 30px 0 30px 0; /* adjust vertical padding as needed */
         margin: 0;
-        padding-left: 150px;
-        padding-right: 150px;
-        font-size: 20px;
         border-top: none;
-        border-bottom: 4px solid transparent;
+        border-bottom: 4px solid transparent; /* this will place the border at the bottom */
+        width: 100%; /* the hover effect will span the entire width of the menu item */
     }
     .nav-link:hover, .nav-link.active {
-        color: #0065FC;
         border-top: none;
-        border-bottom: 4px solid #0065FC;
+        border-bottom: 4px solid #0065FC; /* this will highlight the border at the bottom */
     }
     
     .hero-section .hero-title{
@@ -596,9 +598,17 @@ body {
         padding: 12px;
     }
     .search-button{
-        width: 15%;
-        font-size: 25px;
-        height: 45px;
+        display: none;
+    }
+    .search-button-mobile{
+        display: inline-block;
+        font-size: 22px;
+        padding: 14px;
+        border-radius: 0 20px 20px 0;
+        background-color: var(--main-color);
+        color: white;
+        border-color: transparent;
+        
     }
 
     .search-icon{
