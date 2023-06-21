@@ -380,12 +380,9 @@ body {
 /**********Activités************/
 
 .activities-Marseille {
+    margin: 35px;
     padding: 30px;
     box-sizing: border-box;
-}
-
-.activities{
-    width: 100%;
 }
 
 .activities-title{
@@ -403,6 +400,7 @@ body {
 .activity-cards .card{
     display: flex;
     margin-top: 33px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .activity-cards img{
@@ -416,12 +414,12 @@ body {
 .activity-cards .card-title{
     display: flex;
     flex-wrap: wrap;
-    padding-left:20px;
+    padding: 20px 20px 20px 19px;
+    margin: 0;
 }
 
 .activity-cards .card:hover{
     transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
 }
 
 /**********footer************/
@@ -430,12 +428,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 250px;
+    gap: 280px;
     background-color: var(--main-bg-color);
-    padding: 30px;
+    width: 1340px;
+    height: 143px;
+    padding: 20px 20px 0 20px;
+    margin: auto;
 }
-
+.site-footer .title{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    
+    }
 .site-footer .list{
     list-style: none;
     margin: 0;
@@ -443,7 +451,7 @@ body {
 }
 
 .site-footer .list-item{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .site-footer .list-link{
