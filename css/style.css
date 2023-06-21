@@ -467,75 +467,80 @@ body {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media screen and (max-width: 1024px) {
-    
-    .search-input{
-        width: 20%;
-        font-size: 16px;
-        padding: 12px;
-    }
-    .search-button{
-        width: 15%;
-        font-size: 16px;
-        height: 45px;
+@media (max-width: 1024px) {
+
+    /*Header*/
+
+    .nav-item:last-child {
+        margin-right: 50.31px;
     }
 
-    .search-icon{
-        align-items: center;
-        font-size: 16px;
-        padding: 14px;
-    }
-    .filter-heading{
-        padding-right: 1000px;
-        margin-bottom: 0;
-    }
-    .activity-cards .card {
-        width: 193.5px;
-    }
+    /*Hébergements*/
 
-    .activity-cards img {
-        width: 193.5px;
-        height: 270px;
-    }
-    .activity-cards .card-title{
-        align-items: center;
-        padding: 0 10px;
-        font-size: 14px;
-    }
-    
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column;
+        margin: 35px;
     }
 
     .hebergements {
         width: 100%;
+        margin: 0 0 50px 0;
     }
+
+    /*Populaires*/
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 20px;
     }
 
     .populaires-cards .card {
-        width: 30%;
+        width: 100%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    /*Activités*/
+
+    .activity-cards {
+        justify-content: space-between;
+    }
+    
+    .activity-cards .card {
+        width: 193px;
+        height: 270px;
+        margin-top: 33px;
+    }
+    
+    .activity-cards img {
+        width: 193px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+    .activity-cards .card-title {
+        padding: 22.5px 19px;
     }
-    .site-footer{
-        gap: 130px;
+    
+    .activity-cards .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20%;
     }
+
+    /*Footer*/
+
+    .site-footer {
+        gap: 135px;
+        margin: 0 35px 0 35px;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
