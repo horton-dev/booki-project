@@ -180,9 +180,8 @@ body {
 
 .filter-section{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
     margin: 35px;
     width: 758px;
 }
@@ -220,19 +219,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    margin: 20px 0 20px 0;
+    margin: 35px;
 }
 
 .info-icon{
-    font-size: 14px;
-    padding: 5px 10px;
-    border: 2px solid #D9D9D9;
+    width: 4px;
+    height: 10px;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #D9D9D9;
     border-radius: 50%;
 }
 
-.info-text{
-    font-size: 16px;
-}
 
 /****** Hebergements And Populaires ***********/
 
