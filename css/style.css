@@ -424,48 +424,42 @@ body {
 
 /**********footer************/
 
-.site-footer{
+.site-footer {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 280px;
     background-color: var(--main-bg-color);
-    width: 1340px;
-    height: 143px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0 20px; 
     margin: auto;
 }
-.site-footer .title{
+
+.site-footer .title {
     font-size: 18px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 15px;
-    
-    }
-.site-footer .list{
+}
+
+.site-footer .list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.site-footer .list-item{
+.site-footer .list-item {
     margin-bottom: 15px;
 }
 
-.site-footer .list-link{
+.site-footer .list-link {
     text-decoration: none;
     color: #000000;
 }
 
-.list-item:hover{
-    transform: scale(1.1);
-}
-
-.list-link:hover{
+.site-footer .list-link:hover {
     color: var(--main-color);
 }
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
