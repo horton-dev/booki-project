@@ -236,17 +236,15 @@ body {
     padding: 5px;
 }
 
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
 
 /****** Hebergements ***********/
 
 .hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .hebergements-cards{
@@ -325,6 +323,10 @@ body {
 
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
@@ -617,7 +619,97 @@ body {
         text-align: center;
         margin-left: 20px;
     }
+    .info-bar{
+        width: 100%;      
+    }
+    .info-icon{
+        font-size: 200%;
+        margin-left: 20px;
+    }
+    .info-text{
+        font-size: 30px;
+    }
+         /* ... (autres styles pour les mobiles) ... */
 
+    /* Ordre des sections */
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    /* Populaires */
+    .populaires{
+        width: 100%;
+        border-radius: 0;
+    }
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .populaires-cards .card{
+        width: 100%;
+    }
+    .populaires-cards .card-title{
+        font-size: 20px;
+    }
+    .populaires-cards .card-subtitle{
+        font-size: 18px;
+    }
+    .populaires-cards img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px 0 0 20px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .populaires-cards .card-content{
+        width: 100%;
+        padding: 10px;
+    }
+ 
+    
+
+
+    /* Hébergements & Activités */
+    .hebergements {
+        background-color: white; /* Changer la couleur de fond pour hébergements */
+        border-radius: 0; /* Enlève les bords arrondis */
+    }
+    .hebergements-cards img, .activity-cards img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        max-height: 200px; /* Ajuster cette valeur selon la hauteur souhaitée */
+        object-fit: cover;
+    }
+    .hebergements-cards, .activity-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-cards .card, .activity-cards .card {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hebergements-cards .card-content, .activity-cards .card-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hebergements, .activity {
+        background-color: white;
+        padding: 15px;
+    }
+    .hebergements-cards .card:hover, .activity-cards .card:hover{
+        transform: none;
+        transition: none;
+    }
+    .site-footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: 22px;
+    }
 
 
 }
