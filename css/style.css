@@ -109,14 +109,17 @@ body {
 }
 
 /********hero ***********/
+
 .hero-section{
     margin-left: 35px;
 }
+
 .hero-title {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 8px;
 }
+
 .hero-subtitle {
     margin-top: 0;
 }
@@ -459,8 +462,6 @@ body {
 .site-footer .list-link:hover {
     color: var(--main-color);
 }
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
