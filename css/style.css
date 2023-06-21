@@ -109,15 +109,16 @@ body {
 }
 
 /********hero ***********/
-
+.hero-section{
+    margin-left: 35px;
+}
 .hero-title {
     font-size: 22px;
-    margin-bottom: 5px;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
-
-.hero-subtitle{
-    font-size: 16px;
-    margin-top: 5px;
+.hero-subtitle {
+    margin-top: 0;
 }
 
 /********Recherche ***********/
