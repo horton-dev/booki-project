@@ -690,6 +690,10 @@ body {
     padding: 0 20px 20px 20px;
   }
 
+  .hebergements-title {
+    margin-top: 20px;
+  }
+
   .hebergements-cards .card {
     width: 95%;
     flex-direction: column;
