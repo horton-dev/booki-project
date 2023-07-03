@@ -429,7 +429,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 280px;
+  gap: 20vw;
   background-color: var(--main-bg-color);
   padding: 20px 20px 0 20px;
   margin: auto;
@@ -464,12 +464,62 @@ body {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media (max-width: 1380px) {
+  .hebergements-cards {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1363px) {
+  /*Activités*/
+
+  .activity-cards {
+    justify-content: space-between;
+  }
+
+  .activity-cards .card {
+    width: 193px;
+    height: 270px;
+    margin-top: 33px;
+  }
+
+  .activity-cards img {
+    width: 193px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .activity-cards .card-title {
+    padding: 22.5px 19px;
+  }
+
+  .activity-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+  }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /*Header*/
 
   .nav-item:last-child {
     margin-right: 50.31px;
+  }
+
+  /*Filtre*/
+  .filter-section {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .filter-heading {
+    width: 100%;
   }
 
   /*Hébergements*/
@@ -536,6 +586,79 @@ body {
   .site-footer {
     gap: 135px;
     margin: 0 35px 0 35px;
+  }
+}
+@media (max-width: 950px) {
+  /*Hébergements*/
+
+  .hebergements {
+    order: 1;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+  }
+
+  .hebergements-title {
+    margin-top: 20px;
+  }
+
+  .hebergements-cards .card {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .hebergements-cards img {
+    width: 100%;
+    height: 124px;
+  }
+
+  .hebergements-title {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .hebergements-cards .card:hover {
+    transform: none;
+  }
+}
+@media (max-width: 947px) {
+  /*Activités*/
+
+  .activities-Marseille {
+    margin: 30px 0;
+    padding: 0 20px;
+  }
+
+  .activities-title {
+    margin: 0;
+  }
+
+  .activity-cards {
+    width: 100%;
+  }
+
+  .activity-cards .card {
+    width: 95%;
+    height: 200px;
+    flex-direction: column;
+  }
+
+  .activity-cards img {
+    width: 100%;
+    height: 141px;
+  }
+
+  .activity-cards .card:hover {
+    transform: none;
+  }
+}
+@media (max-width: 881px) {
+  /*Footer*/
+
+  .site-footer {
+    margin: 0;
+    padding: 10px;
+    gap: 15vw;
   }
 }
 
